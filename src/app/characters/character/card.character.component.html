@@ -1,0 +1,16 @@
+
+<div fxFlex fxLayout="column">
+  <div fxLayout="row wrap">
+    <div fxFlex="20" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let heroi of todosHerois">
+      <mat-card>
+        <img mat-card-image src={{heroi.thumbnail.path}}.{{heroi.thumbnail.extension}}>
+        <mat-card-title>
+          {{heroi.name}}
+        </mat-card-title>
+        <mat-card-footer>
+          <a href="{{heroi.urls[0].url}}" target="_blank">Mais detalhes</a>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+</div>
